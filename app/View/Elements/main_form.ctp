@@ -39,7 +39,7 @@
             
             <div class="field is-focused form-group <?=(array_key_exists('indabi',$errors)? "has-error":"")?> "> 
             <label for="" class="field-label control-label">Année d'acquisition</label>
-            <input type="number" name="data[SimulationLmnp][indabi]" class="field-input etape1 obligatoire" required="true">
+            <?php echo $this->Form->text('SimulationLmnp.indabi', array('div' => false, 'class' => 'field-input etape1 obligatoire', 'label' => false)); ?> 
             <?=(array_key_exists('indabi',$errors)? "<div class='error-message'>".$errors['indabi'][0]."</div>":"")?>
             <p class="error"></p>
             </div>
